@@ -3,9 +3,9 @@ import './Header.css'
 import { Link } from 'react-router-dom'
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-// import { useStateValue } from '../../StateProvider';
-// import { auth } from '../../config/firebase';
-// import { signOut } from 'firebase/auth';
+import { useStateValue } from './StateProvider';
+import { auth} from './firebase'
+import { signOut } from 'firebase/auth';
 
 function Header() {
   const [{ basket, user }] = useStateValue();
